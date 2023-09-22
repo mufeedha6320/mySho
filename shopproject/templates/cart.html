@@ -35,9 +35,9 @@
         {% for i in cart_items %}
         <tr>
           <td>
-            <a href="i.product.get_absolute_url" >
+            
               <img src="{{i.product.image.url}}" class="float-left rounded" alt="img-product" width="150px">
-            </a>
+            
           </td>
 
           <td>
@@ -100,6 +100,9 @@
       </table>
       <div class="max-auto">
         <a href="{% url 'shopapp:allProCat' %}" class="btn btn-secondary"> Continue Shopping </a>
+      </div> <br>
+      <div class="max-auto">
+        <a href="{% url 'shopapp:allProCat' %}" class="btn btn-secondary"> Payment </a>
       </div>
     </div>
   </div>
